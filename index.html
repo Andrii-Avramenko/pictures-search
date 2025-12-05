@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixabay API Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get">
+        <input
+          type="text"
+          pattern="^[0-9]{8}-[A-Za-z0-9]{20,40}$"
+          class="api-key-input"
+          placeholder="Enter your Pixabay API key"
+          required
+        />
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search for images"
+          pattern="[A-Za-z]+"
+          required
+        />
+        <button type="submit" class="submit-button">Search</button>
+      </form>
+      <div class="results"></div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
