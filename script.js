@@ -3,8 +3,7 @@ const resultsEl = document.querySelector(".results");
 const submitBtn = document.querySelector(".submit-button");
 
 window.addEventListener('load', () => {
-    document.querySelector('.api-key-input').value = localStorage.getItem('apiKey') ? localStorage.getItem('apiKey') : 'B'
-    console.log(document.querySelector('.api-key-input').value) 
+    document.querySelector('.api-key-input').value = localStorage.getItem('apiKey') ? localStorage.getItem('apiKey') : ''
 })
 
 function searchPictures(e) {
